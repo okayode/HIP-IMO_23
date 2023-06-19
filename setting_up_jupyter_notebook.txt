@@ -1,0 +1,43 @@
+1. Check if homebrew is installed
+
+brew --version
+
+2. If homebrew is not installed
+
+/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+3. Install Code
+
+xcode-select --install
+
+4. Install miniforge
+
+brew install miniforge
+
+5.  Turn off the base environment
+
+conda config --set auto_activate_base false
+
+6. Create a virtual environment
+
+conda create --name venv python=3.8
+
+7. Activate virtual environment
+
+conda activate venv
+
+8. Install Jupyter notebook & pandas
+
+conda install -c conda-forge -y pandas jupyter
+
+9. Install pip
+
+conda install pip
+
+10. install the libraries in requirements.txt
+
+pip install -r requirements.txt 
+
+11. Let us launch Jupyter notebook
+
+jupyter notebook 
